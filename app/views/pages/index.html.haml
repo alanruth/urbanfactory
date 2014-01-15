@@ -1,0 +1,163 @@
+.row.headline
+  / Begin Headline
+  /
+    Slider Carousel
+    \==================================================
+  .span8
+    .flexslider
+      %ul.slides
+        %li= link_to image_tag('gallery/slider1.jpg'), "#"
+        %li= link_to image_tag('gallery/slider2.jpg'), "#", alt: 'slider'
+        %li= link_to image_tag('gallery/slider3.jpg'), "#", alt: 'slider'
+  /
+    Headline Text
+    \==================================================
+  .span4
+    %h3
+      This is Wonderful.
+      %br/
+      Wonder is a beautiful multipurpose HTML/CSS Theme.
+    %p.lead 18+ html pages crafted with love! Responsive Design. BUY ME!
+/ End Headline
+.row.gallery-row
+  / Begin Gallery Row
+  .span12
+    %h5.title-bg
+      Take a Look
+      %small at our recent work
+      %button.btn.btn-mini.hidden-phone{type: "button"} View Portfolio
+    /
+      Gallery Thumbnails
+      \==================================================
+    .row.clearfix.no-margin
+      %ul.gallery-post-grid.holder
+        / Gallery Item 1
+        %li.span3.gallery-item{"data-id" => "id-1", "data-type" => "illustration"}
+          %span.gallery-hover-4col.hidden-phone.hidden-tablet
+            %span.gallery-icons
+              %a.item-zoom-link.lightbox{"data-rel" => "prettyPhoto", href: "img/gallery/gallery-img-full.jpg", title: "Custom Illustration"}
+              %a.item-details-link{href: "gallery-single.htm"}
+          = link_to image_tag('gallery/gallery-img-1-4col.jpg', alt: 'Gallery'), '#'
+          %span.project-details
+            %a{href: "gallery-single.htm"}> Bad Dinosaur
+            Not so bad really.
+        / Gallery Item 2
+        %li.span3.gallery-item{"data-id" => "id-2", "data-type" => "illustration"}
+          %span.gallery-hover-4col.hidden-phone.hidden-tablet
+            %span.gallery-icons
+              %a.item-zoom-link.lightbox{"data-rel" => "prettyPhoto", href: "img/gallery/gallery-img-full.jpg", title: "Custom Illustration"}
+              %a.item-details-link{href: "gallery-single.htm"}
+          = link_to image_tag('gallery/gallery-img-2-4col.jpg', alt: 'Gallery'), '#'
+          %span.project-details
+            %a{href: "gallery-single.htm"}> I come in peace
+            Take me with your leader.
+        / Gallery Item 3
+        %li.span3.gallery-item{"data-id" => "id-3", "data-type" => "web"}
+          %span.gallery-hover-4col.hidden-phone.hidden-tablet
+            %span.gallery-icons
+              %a.item-zoom-link.lightbox{"data-rel" => "prettyPhoto", href: "img/gallery/gallery-img-full.jpg", title: "Custom Illustration"}
+              %a.item-details-link{href: "#"}
+          = link_to image_tag('gallery/gallery-img-3-4col.jpg', alt: 'Gallery'), '#'
+          %span.project-details
+            %a{href: "gallery-single.htm"}> Pink Unicorn
+            Yes, Unicorns are Pink.
+        / Gallery Item 4
+        %li.span3.gallery-item{"data-id" => "id-4", "data-type" => "video"}
+          %span.gallery-hover-4col.hidden-phone.hidden-tablet
+            %span.gallery-icons
+              %a.item-zoom-link.lightbox{"data-rel" => "prettyPhoto", href: "img/gallery/gallery-img-full.jpg", title: "Custom Illustration"}
+              %a.item-details-link{href: "gallery-single.htm"}
+          = link_to image_tag('gallery/gallery-img-4-4col.jpg', alt: 'Gallery'), '#'
+          %span.project-details
+            %a{href: "gallery-single.htm"}> Really Bad Guy
+            Also I love skates.
+/ End Gallery Row
+.row
+  / Begin Bottom Section
+  /
+    Blog Preview
+    \==================================================
+  .span6
+    %h5.title-bg
+      From the Blog
+      %small All the latest news
+      %button#btn-blog-next.btn.btn-inverse.btn-mini{type: "button"} »
+      %button#btn-blog-prev.btn.btn-inverse.btn-mini{type: "button"} «
+    #blogCarousel.carousel.slide
+      / Carousel items
+      .carousel-inner
+        / Blog Item 1
+        .active.item
+          = link_to image_tag('gallery/blog-med-img-1.jpg', alt: '', class: 'align-left blog-thumb-preview'), '#'
+          .post-info.clearfix
+            %h4
+              %a{href: "blog-single.htm"} You are Super Awesome.
+            %ul.blog-details-preview
+              %li
+                %i.icon-calendar
+                %strong Posted on:
+                Aug 14, 2013
+              %li
+              %li
+                %i.icon-user
+                %strong Posted by:
+                %a{href: "#", title: "Link"} Admin
+              %li
+              %li
+                %i.icon-comment
+                %strong Comments:
+                %a{href: "#", title: "Link"} 8
+              %li
+              %li
+                %i.icon-tags
+                = succeed "," do
+                  %a{href: "#"} artwork
+                = succeed "," do
+                  %a{href: "#"} craft
+          %p.blog-summary
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum
+            ipsum molestie sed porttitor ligula rutrum.
+            %a{href: "#"} Read more
+          %p
+        / Blog Item 2
+        .item
+          = link_to image_tag('gallery/blog-med-img-2.jpg', alt: '', class: 'align-left blog-thumb-preview'), '#'
+          .post-info.clearfix
+            %h4
+              %a{href: "blog-single.htm"} Han Shot First!
+            %ul.blog-details-preview
+              %li
+                %i.icon-calendar
+                %strong Posted on:
+                May 7, 2013
+              %li
+              %li
+                %i.icon-user
+                %strong Posted by:
+                %a{href: "#", title: "Link"} Admin
+              %li
+              %li
+                %i.icon-comment
+                %strong Comments:
+                %a{href: "#", title: "Link"} 6
+              %li
+              %li
+                %i.icon-tags
+                = succeed "," do
+                  %a{href: "#"} artwork
+                %a{href: "#"} draw
+          %p.blog-summary
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum
+            ipsum molestie sed porttitor ligula rutrum.
+            %a{href: "#"} Read more
+          %p
+  /
+    Video Area
+    \==================================================
+  .span6
+    %h5.title-bg
+      Recent Video
+      %small created by us
+    %iframe{allowfullscreen: "", frameborder: "0", height: "300", mozallowfullscreen: "", src: "http://player.vimeo.com/video/44049449", webkitallowfullscreen: "", width: "100%"}
+/ End Bottom Section
+/ End Container

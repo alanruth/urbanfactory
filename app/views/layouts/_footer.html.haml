@@ -1,0 +1,73 @@
+-#Footer Area
+.footer-container
+  .container
+    .row.footer-row
+      .span3.footer-col
+        %h5 Contact Us
+        = image_tag 'wonder-footer-logo.png', alt: "Wonder"
+        %br
+        %br
+        %address
+          %strong Wonder Bunker
+          %br
+          "6064 Amazing St,"
+          %br
+          "Madrid, Spain"
+          %br
+        %ul.social-icons
+          %li= link_to "", "#", class: "social-icon facebook"
+          %li= link_to "", "#", class: "social-icon twitter"
+          %li= link_to "", "#", class: "social-icon dribble"
+          %li= link_to "", "#", class: "social-icon rss"
+          %li= link_to "", "#", class: "social-icon forrst"
+      .span3.footer-col
+        %h5 Latest Tweets
+        %ul
+          %li= link_to "@Basicoh_", "#"
+          "Hey! Buy this beautiful theme right now!"
+          %li= link_to "@Basicoh_", "#"
+          "Wonder Theme is out Now! You can buy it in Wrapbootstrap.com. Really easy to configure with a wonderful design."
+          %li= link_to "@Basicoh_", "#"
+          "If you are an agency, freelancer or a studio, this theme is made for you. Take a look and enjoy it."
+      .span3.footer-col
+        %h5 Latest Posts
+        %ul.post-list
+          %li= link_to "Example post number 1", "#"
+          %li= link_to "Another example post title", "#"
+          %li= link_to "This is the third post title here", "#"
+          %li= link_to "Yet another post title for this list", "#"
+          %li= link_to "No more posts, this is the last one", "#"
+      .span3.footer-col
+        %h5 Flicker Photos
+        %ul.img-feed
+          %li= link_to image_tag('gallery/flickr-img-1.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-2.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-3.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-4.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-5.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-6.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-7.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-8.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-9.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-10.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-11.jpg', alt: "Image Feed"), "#"
+          %li= link_to image_tag('gallery/flickr-img-12.jpg', alt: "Image Feed"), "#"
+
+    .row
+      .span12.footer-col.footer-sub
+        .row.no-margin
+          .span6
+            %span.left &copy; 2012 Wonder Theme. All rights reserved
+          .span6
+            %span.right
+              = link_to "Home", root_path
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              = link_to 'Portfolio', "#"
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              = link_to 'Services', "#"
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              = link_to 'About', "#"
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+              = link_to 'Contact', "#"
+              &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+#toTop.hidden-phone.hiddent-tablet Back to Top

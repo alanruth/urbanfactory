@@ -1,0 +1,19 @@
+!!! 5
+%html
+  %head
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %title= content_for?(:title) ? yield(:title) : "UrbanFactory"
+    %meta{content: content_for?(:description) ? yield(:description) : "Awesome Branding", name: "description"}/
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+    -#%link{href: "http://fonts.googleapis.com/css?family=Lato:100,300,400", rel: "stylesheet", type: "text/css"}/
+    = yield :head
+  %body
+    .color-bar-1
+    .color-bar-2.color-bg
+    .container
+      = render 'layouts/header'
+      -#= render 'layouts/messages'
+      = yield
+      = render 'layouts/footer'

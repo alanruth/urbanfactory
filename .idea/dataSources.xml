@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3919402663">
+    <data-source source="LOCAL" name="Rails urbanfactory: development" uuid="f1f0ee18-f12d-4ff2-aa7e-af2d2ac4ed65">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/urbanfactory_development</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcedfd8dfdadfcfdfdadfdadfcfdfd8</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails urbanfactory: test" uuid="d1652dfd-9dc8-42ec-a0a1-3473a9d070d7">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1/urbanfactory_test</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcedfd8dfdadfcfdfdadfdadfcfdfd8</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+    <data-source source="LOCAL" name="Rails urbanfactory: production" uuid="3421511d-4d06-41ff-ae00-092352e0d333">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:urbanfactory_production</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfcedfd8dfdadfcfdfdadfdadfcfdfd8</user-password>
+      <libraries>
+        <library>
+          <url>file://$USER_HOME$/Library/Preferences/RubyMine40/jdbc-drivers/postgresql-9.1-901.jdbc3.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
