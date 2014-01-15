@@ -3,15 +3,15 @@ ruby '2.0.0'
 
 gem 'flexslider'
 gem 'haml-rails'
+gem 'thin'
 
 group :development, :test do
 	gem 'rspec-rails'
 	gem 'capybara'
-	gem 'thin'
 end
 
 group :production do
-	gem 'unicorn'
+	#gem 'unicorn'
 	gem 'rails_12factor'
 end
 
