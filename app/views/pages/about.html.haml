@@ -1,0 +1,107 @@
+.row
+  .span8
+    / Begin page content column
+    %h2 Right Sidebar
+    %p.lead Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    %h5.title-bg Recent Works
+    .row
+      .span2
+        =image_tag "gallery/gallery-img-1-4col.jpg", class: "thumbnail", alt: "Image"
+        %h5 Project 1
+        %p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      .span2
+        =image_tag "gallery/gallery-img-2-4col.jpg", class: "thumbnail", alt: "Image"
+        %h5 Project 2
+        %p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      .span2
+        =image_tag "gallery/gallery-img-3-4col.jpg", class: "thumbnail", alt: "Image"
+        %h5 Project 3
+        %p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      .span2
+        =image_tag "gallery/gallery-img-4-4col.jpg", class: "thumbnail", alt: "Image"
+        %h5 Project 4
+        %p Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+    %h5.title-bg Important Work
+    .clearfix
+      =image_tag "gallery/gallery-img-5-4col.jpg", class: "thumbnail align-left", alt: "Image"
+      %p Vivamus augue nulla, vestibulum ac ultrices posuere, vehicula ac arcu. Quisque nisi lacus, bibendum quis commodo eget, lobortis eget elit. Cras venenatis mauris eu tortor consequat a convallis nulla molestie. Phasellus malesuada malesuada velit et fermentum. Proin ut leo nec mauris pulvinar volutpat. Sed ac neque nec leo condimentum rhoncus.
+      %p Quisque nisi lacus, bibendum quis commodo eget, lobortis eget elit. Cras venenatis mauris eu tortor consequat a convallis nulla molestie.
+      %button.btn.btn-small.btn-inverse{type: "button"} Visit Website
+  / End page content column
+  /
+    Blog Sidebar
+    \==================================================
+  .span4.sidebar.page-sidebar
+    / Begin sidebar column
+    / Tabbed Content
+    %h6.title-bg More Info
+    %ul.nav.nav-tabs
+      %li.active
+        %a{"data-toggle" => "tab", href: "#comments"} Comments
+      %li
+        %a{"data-toggle" => "tab", href: "#tweets"} Tweets
+      %li
+        %a{"data-toggle" => "tab", href: "#about"} About
+    .tab-content
+      #comments.tab-pane.active
+        %ul
+          %li
+            %i.icon-comment>
+            admin on
+            %a{href: "#"} Project 1
+          %li
+            %i.icon-comment>
+            admin on
+            %a{href: "#"} Project 2
+          %li
+            %i.icon-comment>
+            admin on
+            %a{href: "#"} Project 3
+      #tweets.tab-pane
+        %ul
+          %li
+            %a{href: "#"}
+              %i.icon-comment>
+              @Basicoh_
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          %li
+            %a{href: "#"}
+              %i.icon-comment>
+              @Basicoh_
+            In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices.
+          %li
+            %a{href: "#"}
+              %i.icon-comment>
+              @Basicoh_
+            Vivamus nec lectus sed orci molestie molestie.
+      #about.tab-pane
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie.
+    / Testimonials
+    %h6.title-bg Testimonials
+    %p.quote-text.side
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie."
+      %cite - First Client, Company Name
+    %p.quote-text.side
+      "Adipiscing elit. In interdum felis fermentum ipsum molestie sed porttitor ligula rutrum. Morbi blandit ultricies ultrices. Vivamus nec lectus sed orci molestie molestie."
+      %cite - Second Client, Company Name
+    / Latest News
+    %h6.title-bg Latest Posts
+    %ul.popular-posts
+      %li
+        %a{href: "#"}
+          =image_tag "gallery/gallery-img-6-thumb.jpg", alt: "Popular Post"
+        %h6
+          %a{href: "#"} Lorem ipsum dolor sit amet consectetur adipiscing elit
+        %em Posted on 02/21/13
+      %li
+        %a{href: "#"}
+          =image_tag "gallery/gallery-img-7-thumb.jpg", alt: "Popular Post"
+        %h6
+          %a{href: "#"} Lorem ipsum dolor sit amet consectetur adipiscing elit
+        %em Posted on 03/01/13
+      %li
+        %a{href: "#"}
+          =image_tag "gallery/gallery-img-8-thumb.jpg", alt: "Popular Post"
+        %h6
+          %a{href: "#"} Lorem ipsum dolor sit amet consectetur adipiscing elit
+        %em Posted on 05/16/13

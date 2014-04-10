@@ -11,7 +11,7 @@
  *= require_self
  *= require bootstrap2_2_2/bootstrap
  *= require bootstrap2_2_2/bootstrap-responsive
- *= require flexslider
+ *= require wonder/flexslider
  *= require wonder/prettyPhoto
  *= require_tree .
  */

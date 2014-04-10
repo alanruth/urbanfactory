@@ -1,7 +1,6 @@
 Urbanfactory::Application.routes.draw do
 
-  get "pages/index_gallery", :as => 'index_gallery'
-  get "pages/index_slider", :as => 'index_slider'
+  get 'aboutus' => 'pages#about'
 	root 'pages#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.1'
 
-gem 'flexslider'
+# gem 'flexslider'
 gem 'haml-rails'
 gem 'thin'
 
@@ -16,7 +16,7 @@ group :production do
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.0.4'
 
 # Use postgresql as the database for Active Record
 gem 'pg'

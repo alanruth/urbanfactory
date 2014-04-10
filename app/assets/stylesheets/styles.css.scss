@@ -48,6 +48,9 @@ h5.title-bg button {
 
 /***** Links *****/
 a, a:hover { color:#ef4f1d; }
+.navbar .nav > li > a:hover {
+  color: #ef4f1d;
+}
 
 /***** Misc *****/
 i {margin-right: 3px;}

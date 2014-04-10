@@ -16,8 +16,8 @@
 //= require bootstrap2_2_2/bootstrap
 //= require wonder/jquery.custom
 //= require wonder/jquery.easing.1.3
-//= require jquery.flexslider
 //= require wonder/jquery.prettyPhoto
 //= require wonder/jquery.quicksand
+//= require wonder/jquery.flexslider
 //= require_tree .
 
